@@ -32,26 +32,91 @@
         </header>
 
         <div id="body">
-            <div class="monitor__table">
-                <table cellpadding="10" cellspacing="2" 
-                width="1000" height="100" >
-                    <tr>
-                        <th>Nhiệt Độ <i class="fas fa-temperature-high"></i> </th>
-                        <th>Độ Ẩm <i class="fas fa-tint"></i> </th>
-                        <th>Cường Độ Ánh Sáng <i class="fas fa-sun"></i> </th>
-                        <th>Độ Ẩm Đất <i class="fas fa-tint"> </i></th>
-                    </tr>
-                    <tr>
-                        <td>30 &#8451 </td>
-                        <td>40 % </td>
-                        <td>600 lux</td>
-                        <td>40 %</td>
-                    </tr>
-                </table>
+            <div class="parameter">
+                <div class="parameter__item">
+                    <div class="parameter__item-symbol parameter__item-symbol--temperature">
+                        <i class="parameter__item-symbol-icon fas fa-temperature-low"></i>
+                    </div>
+                    <div class="parameter__item-data">
+                        <span class="parameter__item-data-name">NHIỆT ĐỘ</span>
+                        <span class="parameter__item-data-value">30 &#8451 </span>
+                    </div>
+                </div>
+                <div class="parameter__item">
+                    <div class="parameter__item-symbol parameter__item-symbol--air">
+                        <i class="parameter__item-symbol-icon fas fa-cloud-sun-rain"></i>
+                    </div>
+                    <div class="parameter__item-data">
+                        <span class="parameter__item-data-name">KHÔNG KHÍ</span>
+                        <span class="parameter__item-data-value">60 %</span>
+                    </div>
+                </div>
+                <div class="parameter__item">
+                    <div class="parameter__item-symbol parameter__item-symbol--soil">
+                        <i class="parameter__item-symbol-icon fas fa-tint"></i>
+                    </div>
+                    <div class="parameter__item-data">
+                        <span class="parameter__item-data-name">ẨM ĐẤT</span>
+                        <span class="parameter__item-data-value">40 % </span>
+                    </div>
+                </div>
+                <div class="parameter__item">
+                    <div class="parameter__item-symbol parameter__item-symbol--lux">
+                        <i class="parameter__item-symbol-icon fas fa-sun"></i>
+                    </div>
+                    <div class="parameter__item-data"> 
+                        <span class="parameter__item-data-name">ÁNH SÁNG</span>
+                        <span class="parameter__item-data-value">200 Lux </span>
+                    </div>
+                </div>
             </div>
 
             <div class="control">
-                <div class="control__wrap">
+                <div class="table-wrap">
+                    <table class="content-table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Thiết Bị</th>
+                            <th>Trạng Thái</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Quạt thông khí</td>
+                            <td>TẮT</td>
+                          </tr>
+                          <tr class="active-row">
+                            <td>2</td>
+                            <td>Phun Sương</td>
+                            <td>TẮT</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Máy Bơm</td>
+                            <td>TẮT</td>
+                          </tr>
+                          <tr class="active-row">
+                            <td>4</td>
+                            <td>Đèn Chiếu Sáng</td>
+                            <td>TẮT</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>Chế Độ Auto</td>
+                            <td>TẮT</td>
+                          </tr>
+                          <tr class="active-row">
+                            <td>6</td>
+                            <td>Chế Độ Manual</td>
+                            <td>BẬT</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                
+                <!-- <div class="control__wrap">
                     <div class="control__device-table">
                         <table cellpadding="10" cellspacing="2" width="250">
                             <tr>
@@ -92,7 +157,7 @@
                             </tr>
                         </table>
                     </div>
-                </div>
+                </div> -->
                 
                 <div class="control__device">
                     <button class="control__device-btn">AUTO</button>
